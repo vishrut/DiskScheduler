@@ -1,0 +1,48 @@
+Number of requests:5
+Initial Track:5
+Disk Buffer Size:3
+Generated requests :
+2008  1478  3521  1478  1047  
+
+Using SSTF
+Order of read :
+3521  1478  1478  1047  2008  
+
+Sectors in Cache : 
+Reading Sector.....
+/virtual4/Track5/Sector3521
+This is Sector 3521 of Surface 4 and Track 5
+Seektime : 0
+
+
+Sectors in Cache : 3521 
+Reading Sector.....
+/virtual2/Track4/Sector1478
+This is Sector 1478 of Surface 2 and Track 4
+Seektime : 1
+
+
+Sectors in Cache : 3521 1478 
+Reading Sector From Cache.....
+/virtual6/Disk-Cache/Sector1478
+This is Sector 1478 of Surface 2 and Track 4
+
+Seektime : 0
+
+
+Sectors in Cache : 3521 1478 
+Reading Sector.....
+/virtual2/Track0/Sector1047
+This is Sector 1047 of Surface 2 and Track 0
+Seektime : 4
+
+
+Sectors in Cache : 3521 1478 1047 
+Reading Sector.....
+/virtual3/Track0/Sector2008
+This is Sector 2008 of Surface 3 and Track 0
+Seektime : 0
+
+
+Total Seek : 5
+Cache Hits : 1
